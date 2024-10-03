@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "One-Time Passwords"
+    prefix: "OTP"
+    regex:
+      - (?i)(otp|единовременный)\s*[_:;\s\-/><(это)]*(\S+)

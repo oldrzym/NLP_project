@@ -1,0 +1,9 @@
+masking_patterns:
+  - type: "All Numbers"
+    prefix: "NUM"
+    regex:
+      # - "\\d+[.,]?\\d*(?!\\s*})"
+      - "(?<!\\S)\\d+[.,]?\\d*(?!\\s*\\})"
+
+
+

@@ -1,0 +1,31 @@
+build_and_publish:
+  image: docker:latest
+  stage: build
+  services:
+    - docker:dind
+
+  script:
+    - |
+      if [[ "$CI_COMMIT_BRANCH" == "$CI_DEFAULT_BRANCH" ]]; then
+        tag=""
+        echo "Running on default branch '$CI_DEFAULT_BRANCH': tag = 'latest'"
+      else
+        tag=":$CI_COMMIT_REF_SLUG"
+        echo "Running on branch '$CI_COMMIT_BRANCH': tag = $tag"
+      fi
+    
+    - docker rmi nlp_mask:latest --force
+    - docker version
+    - docker build --pull --tag "nlp_mask${tag}" $CI_PROJECT_DIR
+    
+    - docker stop nlp_mask
+    - docker rm nlp_mask
+    
+    - docker run --name nlp_mask -dt -v nlp_mask:/var/opt/nlp_mask -p 8000:8000 --restart always nlp_mask:latest
+  tags: 
+    - nlp_mask
+    
+  rules:
+    - if: $CI_COMMIT_BRANCH
+      exists:
+        - Dockerfile

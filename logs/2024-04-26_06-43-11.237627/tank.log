@@ -1,0 +1,61 @@
+2024-04-26 06:43:11,253 [INFO] root tankworker.py:153	Log file created
+2024-04-26 06:43:11,253 [INFO] root tankworker.py:157	Logging handler <FileHandler /var/loadtest/tank_errors.log (WARNING)> added
+2024-04-26 06:43:11,253 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stdout> (INFO)> added
+2024-04-26 06:43:11,253 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stderr> (NOTSET)> added
+2024-04-26 06:43:11,259 [INFO] root tankworker.py:69	Created a folder for the test. /var/loadtest/logs/2024-04-26_06-43-11.237627
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:254	Configuring plugins...
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:205	Loading plugins...
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: autostop
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Autostop
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: console
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Console
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: json_report
+2024-04-26 06:43:11,260 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.JsonReport
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: phantom
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Phantom
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcheck
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ResourceCheck
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: shellexec
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ShellExec
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcassert
+2024-04-26 06:43:11,261 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.RCAssert
+2024-04-26 06:43:11,263 [INFO] yandextank.common.util util.py:578	Testing connection to resolved address 127.0.0.1 and port 8000
+2024-04-26 06:43:11,263 [INFO] yandextank.plugins.Phantom.utils utils.py:277	Resolved localhost into 127.0.0.1:8000
+2024-04-26 06:43:11,263 [INFO] yandextank.stepper.main main.py:197	Configuring StepperWrapper...
+2024-04-26 06:43:11,264 [ERROR] yandextank.common.util util.py:815	Exception occurred:
+<class 'FileNotFoundError'>: [Errno 2] No such file or directory: 'path/to/your/ammo.txt'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 248, in prepare_stepper
+    self.stpd = self.__get_stpd_filename()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 299, in __get_stpd_filename
+    hashed_str += sep + opener.hash
+
+  File "/usr/local/lib/python3.8/dist-packages/netort/resource.py", line 158, in hash
+    stat = os.stat(self.f_path)
+
+2024-04-26 06:43:11,264 [INFO] yandextank.common.util util.py:816	Trying to clean up
+2024-04-26 06:43:11,264 [INFO] yandextank.core.tankcore tankcore.py:630	Releasing lock: /var/lock/lunapark_e1tp9bk2.lock
+2024-04-26 06:43:11,266 [INFO] yandextank.core.tankcore tankcore.py:405	Artifacts dir: /var/loadtest/logs/2024-04-26_06-43-11.237627
+2024-04-26 06:43:11,266 [INFO] yandextank.core.tankcore tankcore.py:461	File not found to collect: validation_error.yaml
+2024-04-26 06:43:11,266 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2024-04-26_06-43-11.237627/answ_4bhjybcf.log
+2024-04-26 06:43:11,266 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2024-04-26_06-43-11.237627/phout_g5n07cjw.log
+2024-04-26 06:43:11,266 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2024-04-26_06-43-11.237627/phantom_stat_ik9bgfog.log
+2024-04-26 06:43:11,266 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2024-04-26_06-43-11.237627/phantom_5difklpa.log

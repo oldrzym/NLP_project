@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "BIC Codes"
+    prefix: "BIC"
+    regex:
+      - "\\b\\d{2}-?\\d{2}-?\\d{2}-?\\d{3}\\b"

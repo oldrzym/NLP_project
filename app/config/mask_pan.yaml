@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "PAN nomber"
+    prefix: "PAN"
+    regex:
+      - '\b(?:\d{4}[_:;\\,\.\s\/-]*){3}\d{4}\b'

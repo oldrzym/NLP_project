@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "Email Addresses"
+    prefix: "EMAIL"
+    regex:
+      - "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b"

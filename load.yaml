@@ -1,0 +1,12 @@
+phantom:
+  address: localhost:8000
+  ammofile: ammo.txt
+  load_profile:
+    load_type: rps 
+    schedule: const(0.2, 10m)
+
+console:
+  enabled: true
+
+telegraf:
+  enabled: false

@@ -1,0 +1,36 @@
+masking_order:
+  - mask_user_identifiers
+  - mask_passwords
+  - mask_code_words
+  - mask_cvc_cvvs
+  - mask_security_keys
+  - mask_emails
+  - mask_otps
+  - mask_swift_bics
+  - mask_computer_names
+  
+  - pullenti
+  - natasha
+
+  - mask_account_numbers
+  - mask_broker_account_numbers
+  - mask_passport_ID
+  - mask_passport_ID_text
+  - mask_dates
+  - mask_pan
+  - mask_expiration_date
+  - mask_account_transactions
+  - mask_mobile_phones
+  - mask_home_phones
+  - mask_money
+  - mask_inns
+  - mask_bics
+
+# copilot  
+  # - mask_urls
+  # - mask_file_paths
+  # - mask_token_hashes
+  # - mask_ips
+  - mask_text_numbers
+  - mask_numbers
+  - custom_lemmatization

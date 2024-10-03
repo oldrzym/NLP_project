@@ -1,0 +1,6 @@
+masking_patterns:
+  - type: "Account Transactions"
+    prefix: "ACCOUNT_TRANS"
+    regex:
+      - "(?<=\\s)\\d+\\,\\d{2}(?=\\s)"
+      - "(?<=\\s)\\d+\\.\\d{2}(?=\\s)"

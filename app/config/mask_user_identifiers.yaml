@@ -1,0 +1,7 @@
+masking_patterns:
+  - type: "User Identifiers"
+    prefix: "USER_ID"
+    regex:
+      - (?i)(login|alias|username|user|идентификатор пользователя|логин)\s*[_:;\s\-/><(это)]*(\S+)
+      - (?i)\b(?:bcs\\)\w+|\w+@(?:global)\.bcs\b
+      - (?i)\b(?:svc|usr)(?:[-_ ])\w*\b

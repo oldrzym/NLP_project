@@ -1,0 +1,6 @@
+masking_patterns:
+  - type: "URLs"
+    prefix: "URL"
+    regex:
+      - "\\b(?:http|https|ftp|s3)?://\\S+\\b"
+      - "\\bwww\\.\\S+\\b"

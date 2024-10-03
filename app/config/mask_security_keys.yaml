@@ -1,0 +1,20 @@
+masking_patterns:
+  - type: "Security Keys"
+    prefix: "SECURITY_KEY"
+    regex:
+      - >
+        (secret key:
+        |AES:
+        |RSA:
+        |private key:
+        |key:
+        |SECRET KEY:
+        |aes:
+        |rsa:
+        |PRIVATE KEY:
+        |KEY:
+        |Secret Key:
+        |Aes:
+        |Rsa:
+        |Private Key:
+        |Key:)\s*(\S+)

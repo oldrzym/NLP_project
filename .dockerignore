@@ -1,0 +1,12 @@
+REGEXES.ipynb
+text_text.txt
+__pycache__
+app/__pycache__
+pullenti/__pycache__
+README.md
+build.sh
+logs/
+.gitlab_ci.yml
+ammo.txt
+load.yaml
+# post_data.txt

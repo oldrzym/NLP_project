@@ -1,0 +1,7 @@
+masking_patterns:
+  - type: "Passport ID Numbers"
+    prefix: "PASSPORT_ID"
+    regex:
+      - "\\b\\d{2} \\d{2} \\d{6}\\b"
+      - "\\b\\d{4} \\d{6}\\b"
+      - "\\b\\d{10}\\b"

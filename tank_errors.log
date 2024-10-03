@@ -1,0 +1,412 @@
+2024-04-26 06:42:05,468	Exception occurred:
+<class 'ValueError'>: invalid literal for int() with base 10: '8000/mask'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 76, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 274, in read_config
+    self.ipv6, self.resolved_ip, self.port, self.address = self.address_wizard.resolve(
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/common/util.py", line 553, in resolve
+    port = int(parts[1])
+
+2024-04-26 06:42:22,360	Exception occurred:
+<class 'FileNotFoundError'>: [Errno 2] No such file or directory: 'path/to/your/ammo.txt'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 248, in prepare_stepper
+    self.stpd = self.__get_stpd_filename()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 299, in __get_stpd_filename
+    hashed_str += sep + opener.hash
+
+  File "/usr/local/lib/python3.8/dist-packages/netort/resource.py", line 158, in hash
+    stat = os.stat(self.f_path)
+
+2024-04-26 06:43:11,264	Exception occurred:
+<class 'FileNotFoundError'>: [Errno 2] No such file or directory: 'path/to/your/ammo.txt'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 248, in prepare_stepper
+    self.stpd = self.__get_stpd_filename()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 299, in __get_stpd_filename
+    hashed_str += sep + opener.hash
+
+  File "/usr/local/lib/python3.8/dist-packages/netort/resource.py", line 158, in hash
+    stat = os.stat(self.f_path)
+
+2024-04-26 06:45:35,850	Interrupting
+2024-04-26 06:45:35,850	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2024-04-26 06:48:32,429	Interrupting
+2024-04-26 06:48:32,429	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2024-04-26 06:51:24,437	Interrupting
+2024-04-26 06:51:24,438	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2024-04-26 07:07:57,943	Exception occurred:
+<class 'yandextank.stepper.module_exceptions.AmmoFileError'>: Error while reading ammo file. Position: 803, header: 'b'\xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xbe\xd0\xb1\xd1\x80, \xd1\x87\xd1\x82\xd0\xbe \xd0\xba\xd0\xbe\xd0\xb3\xd0\xb4\xd0\xb0 svc-admin \xd0\xbf\xd0\xbe\xd0\xbf\xd1\x80\xd0\xbe\xd1\x81\xd0\xb8\xd0\xbb \xd0\xb5\xd0\xb3\xd0\xbe \xd0\xbf\xd1\x80\xd0\xb8\xd0\xbd\xd0\xb5\xd1\x81\xd1\x82\xd0\xb8 \xd0\xba\xd0\xbe\xd1\x84\xd0\xb5 \xd0\xb4\xd0\xbb\xd1\x8f kira7@GLOBAL.BCS, \xd1\x82\xd0\xbe \xd0\xbe\xd0\xbd \xd0\xbb\xd1\x8e\xd0\xb1\xd0\xb5\xd0\xb7\xd0\xbd\xd0\xbe \xd1\x81\xd0\xbe\xd0\xb3\xd0\xbb\xd0\xb0\xd1\x81\xd0\xb8\xd0\xbb\xd1\x81\xd1\x8f. \xd0\x9f\xd1\x80\xd0\xbe\xd0\xb2\xd0\xb5\xd1\x80\xd0\xba\xd0\xb0 \xd0\xbe\xd0\xb1\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f \xd0\xbe\xd1\x82\xd0\xb2\xd0\xb5\xd1\x82 \xd0\xbd\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xb4-\xd1\x84\xd1\x80\xd0\xb0\xd0\xb7\xd0\xb0: \xd0\xb0\xd0\xbf\xd0\xb5\xd0\xbb\xd1\x8c\xd1\x81\xd0\xb8\xd0\xbd. \xd0\x98 \xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xb0\xd0\xbb\xd0\xb5\xd0\xb5. \xd0\x9c\xd0\xb5\xd0\xb4\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xbd\xd1\x8b\xd0\xb5 \xd0\xbb\xd0\xb5\xd0\xbc\xd0\xbc\xd0\xb8\xd0\xbd\xd0\xb3\xd0\xb8 \xd0\xbd\xd0\xb5 \xd0\xbb\xd1\x8e\xd0\xb1\xd1\x8f\xd1\x82 \xd1\x81\xd1\x83\xd0\xb5\xd1\x82\xd1\x8b. \xd0\x91\xd1\x8b\xd1\x81\xd1\x82\xd1\x80\xd1\x8b\xd0\xb9 \xd0\xb7\xd0\xb0\xd1\x8f\xd1\x86 \xd1\x81\xd0\xbf\xd0\xb5\xd1\x88\xd0\xb8\xd1\x82 \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xbe\xd0\xb9. \xd0\x92 \xd0\xbd\xd0\xb5\xd0\xb1\xd0\xb5 \xd0\xbb\xd0\xb5\xd1\x82\xd0\xb8\xd1\x82 \xd0\xbf\xd1\x82\xd0\xb8\xd1\x86\xd0\xb0."}'', original exception: invalid literal for int() with base 10: b'\xd1\x82\xd0\xb0\xd0\xba'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 264, in prepare_stepper
+    self.__make_stpd_file()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 354, in __make_stpd_file
+    stepper.write(os)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 64, in write
+    for missile in self.ammo:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/format.py", line 18, in __iter__
+    for timestamp, marker, missile in self.af:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 50, in <genexpr>
+    return ((timestamp, marker or self.marker(missile), missile)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 44, in <genexpr>
+    ammo_stream = (
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 46, in <genexpr>
+    for ammo in ((missile, marker or self.marker(missile))
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/missile.py", line 137, in __iter__
+    raise AmmoFileError(
+
+2024-04-26 07:09:36,759	Exception occurred:
+<class 'yandextank.stepper.module_exceptions.AmmoFileError'>: Error while reading ammo file. Position: 808, header: 'b'\xb3\xd0\xb8\xd0\xbd argofun \xd0\xb1\xd1\x8b\xd0\xbb \xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xbe\xd0\xb1\xd1\x80, \xd1\x87\xd1\x82\xd0\xbe \xd0\xba\xd0\xbe\xd0\xb3\xd0\xb4\xd0\xb0 svc-admin \xd0\xbf\xd0\xbe\xd0\xbf\xd1\x80\xd0\xbe\xd1\x81\xd0\xb8\xd0\xbb \xd0\xb5\xd0\xb3\xd0\xbe \xd0\xbf\xd1\x80\xd0\xb8\xd0\xbd\xd0\xb5\xd1\x81\xd1\x82\xd0\xb8 \xd0\xba\xd0\xbe\xd1\x84\xd0\xb5 \xd0\xb4\xd0\xbb\xd1\x8f kira7@GLOBAL.BCS, \xd1\x82\xd0\xbe \xd0\xbe\xd0\xbd \xd0\xbb\xd1\x8e\xd0\xb1\xd0\xb5\xd0\xb7\xd0\xbd\xd0\xbe \xd1\x81\xd0\xbe\xd0\xb3\xd0\xbb\xd0\xb0\xd1\x81\xd0\xb8\xd0\xbb\xd1\x81\xd1\x8f. \xd0\x9f\xd1\x80\xd0\xbe\xd0\xb2\xd0\xb5\xd1\x80\xd0\xba\xd0\xb0 \xd0\xbe\xd0\xb1\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f \xd0\xbe\xd1\x82\xd0\xb2\xd0\xb5\xd1\x82 \xd0\xbd\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xb4-\xd1\x84\xd1\x80\xd0\xb0\xd0\xb7\xd0\xb0: \xd0\xb0\xd0\xbf\xd0\xb5\xd0\xbb\xd1\x8c\xd1\x81\xd0\xb8\xd0\xbd. \xd0\x98 \xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xb0\xd0\xbb\xd0\xb5\xd0\xb5. \xd0\x9c\xd0\xb5\xd0\xb4\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xbd\xd1\x8b\xd0\xb5 \xd0\xbb\xd0\xb5\xd0\xbc\xd0\xbc\xd0\xb8\xd0\xbd\xd0\xb3\xd0\xb8 \xd0\xbd\xd0\xb5 \xd0\xbb\xd1\x8e\xd0\xb1\xd1\x8f\xd1\x82 \xd1\x81\xd1\x83\xd0\xb5\xd1\x82\xd1\x8b. \xd0\x91\xd1\x8b\xd1\x81\xd1\x82\xd1\x80\xd1\x8b\xd0\xb9 \xd0\xb7\xd0\xb0\xd1\x8f\xd1\x86 \xd1\x81\xd0\xbf\xd0\xb5\xd1\x88\xd0\xb8\xd1\x82 \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xbe\xd0\xb9. \xd0\x92 \xd0\xbd\xd0\xb5\xd0\xb1\xd0\xb5 \xd0\xbb\xd0\xb5\xd1\x82\xd0\xb8\xd1\x82 \xd0\xbf\xd1\x82\xd0\xb8\xd1\x86\xd0\xb0."}'', original exception: invalid literal for int() with base 10: b'\xb3\xd0\xb8\xd0\xbd'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 264, in prepare_stepper
+    self.__make_stpd_file()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 354, in __make_stpd_file
+    stepper.write(os)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 64, in write
+    for missile in self.ammo:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/format.py", line 18, in __iter__
+    for timestamp, marker, missile in self.af:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 50, in <genexpr>
+    return ((timestamp, marker or self.marker(missile), missile)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 44, in <genexpr>
+    ammo_stream = (
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 46, in <genexpr>
+    for ammo in ((missile, marker or self.marker(missile))
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/missile.py", line 137, in __iter__
+    raise AmmoFileError(
+
+2024-04-26 07:09:47,706	Exception occurred:
+<class 'yandextank.stepper.module_exceptions.AmmoFileError'>: Error while reading ammo file. Position: 804, header: 'b'\xb3\xd0\xb8\xd0\xbd argofun \xd0\xb1\xd1\x8b\xd0\xbb \xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xbe\xd0\xb1\xd1\x80, \xd1\x87\xd1\x82\xd0\xbe \xd0\xba\xd0\xbe\xd0\xb3\xd0\xb4\xd0\xb0 svc-admin \xd0\xbf\xd0\xbe\xd0\xbf\xd1\x80\xd0\xbe\xd1\x81\xd0\xb8\xd0\xbb \xd0\xb5\xd0\xb3\xd0\xbe \xd0\xbf\xd1\x80\xd0\xb8\xd0\xbd\xd0\xb5\xd1\x81\xd1\x82\xd0\xb8 \xd0\xba\xd0\xbe\xd1\x84\xd0\xb5 \xd0\xb4\xd0\xbb\xd1\x8f kira7@GLOBAL.BCS, \xd1\x82\xd0\xbe \xd0\xbe\xd0\xbd \xd0\xbb\xd1\x8e\xd0\xb1\xd0\xb5\xd0\xb7\xd0\xbd\xd0\xbe \xd1\x81\xd0\xbe\xd0\xb3\xd0\xbb\xd0\xb0\xd1\x81\xd0\xb8\xd0\xbb\xd1\x81\xd1\x8f. \xd0\x9f\xd1\x80\xd0\xbe\xd0\xb2\xd0\xb5\xd1\x80\xd0\xba\xd0\xb0 \xd0\xbe\xd0\xb1\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f \xd0\xbe\xd1\x82\xd0\xb2\xd0\xb5\xd1\x82 \xd0\xbd\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xb4-\xd1\x84\xd1\x80\xd0\xb0\xd0\xb7\xd0\xb0: \xd0\xb0\xd0\xbf\xd0\xb5\xd0\xbb\xd1\x8c\xd1\x81\xd0\xb8\xd0\xbd. \xd0\x98 \xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xb0\xd0\xbb\xd0\xb5\xd0\xb5. \xd0\x9c\xd0\xb5\xd0\xb4\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xbd\xd1\x8b\xd0\xb5 \xd0\xbb\xd0\xb5\xd0\xbc\xd0\xbc\xd0\xb8\xd0\xbd\xd0\xb3\xd0\xb8 \xd0\xbd\xd0\xb5 \xd0\xbb\xd1\x8e\xd0\xb1\xd1\x8f\xd1\x82 \xd1\x81\xd1\x83\xd0\xb5\xd1\x82\xd1\x8b. \xd0\x91\xd1\x8b\xd1\x81\xd1\x82\xd1\x80\xd1\x8b\xd0\xb9 \xd0\xb7\xd0\xb0\xd1\x8f\xd1\x86 \xd1\x81\xd0\xbf\xd0\xb5\xd1\x88\xd0\xb8\xd1\x82 \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xbe\xd0\xb9. \xd0\x92 \xd0\xbd\xd0\xb5\xd0\xb1\xd0\xb5 \xd0\xbb\xd0\xb5\xd1\x82\xd0\xb8\xd1\x82 \xd0\xbf\xd1\x82\xd0\xb8\xd1\x86\xd0\xb0."}'', original exception: invalid literal for int() with base 10: b'\xb3\xd0\xb8\xd0\xbd'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 264, in prepare_stepper
+    self.__make_stpd_file()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 354, in __make_stpd_file
+    stepper.write(os)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 64, in write
+    for missile in self.ammo:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/format.py", line 18, in __iter__
+    for timestamp, marker, missile in self.af:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 50, in <genexpr>
+    return ((timestamp, marker or self.marker(missile), missile)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 44, in <genexpr>
+    ammo_stream = (
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 46, in <genexpr>
+    for ammo in ((missile, marker or self.marker(missile))
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/missile.py", line 137, in __iter__
+    raise AmmoFileError(
+
+2024-04-26 07:10:09,539	Exception occurred:
+<class 'yandextank.stepper.module_exceptions.AmmoFileError'>: Error while reading ammo file. Position: 808, header: 'b'\xb3\xd0\xb8\xd0\xbd argofun \xd0\xb1\xd1\x8b\xd0\xbb \xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xbe\xd0\xb1\xd1\x80, \xd1\x87\xd1\x82\xd0\xbe \xd0\xba\xd0\xbe\xd0\xb3\xd0\xb4\xd0\xb0 svc-admin \xd0\xbf\xd0\xbe\xd0\xbf\xd1\x80\xd0\xbe\xd1\x81\xd0\xb8\xd0\xbb \xd0\xb5\xd0\xb3\xd0\xbe \xd0\xbf\xd1\x80\xd0\xb8\xd0\xbd\xd0\xb5\xd1\x81\xd1\x82\xd0\xb8 \xd0\xba\xd0\xbe\xd1\x84\xd0\xb5 \xd0\xb4\xd0\xbb\xd1\x8f kira7@GLOBAL.BCS, \xd1\x82\xd0\xbe \xd0\xbe\xd0\xbd \xd0\xbb\xd1\x8e\xd0\xb1\xd0\xb5\xd0\xb7\xd0\xbd\xd0\xbe \xd1\x81\xd0\xbe\xd0\xb3\xd0\xbb\xd0\xb0\xd1\x81\xd0\xb8\xd0\xbb\xd1\x81\xd1\x8f. \xd0\x9f\xd1\x80\xd0\xbe\xd0\xb2\xd0\xb5\xd1\x80\xd0\xba\xd0\xb0 \xd0\xbe\xd0\xb1\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f \xd0\xbe\xd1\x82\xd0\xb2\xd0\xb5\xd1\x82 \xd0\xbd\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xb4-\xd1\x84\xd1\x80\xd0\xb0\xd0\xb7\xd0\xb0: \xd0\xb0\xd0\xbf\xd0\xb5\xd0\xbb\xd1\x8c\xd1\x81\xd0\xb8\xd0\xbd. \xd0\x98 \xd1\x82\xd0\xb0\xd0\xba \xd0\xb4\xd0\xb0\xd0\xbb\xd0\xb5\xd0\xb5. \xd0\x9c\xd0\xb5\xd0\xb4\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xbd\xd1\x8b\xd0\xb5 \xd0\xbb\xd0\xb5\xd0\xbc\xd0\xbc\xd0\xb8\xd0\xbd\xd0\xb3\xd0\xb8 \xd0\xbd\xd0\xb5 \xd0\xbb\xd1\x8e\xd0\xb1\xd1\x8f\xd1\x82 \xd1\x81\xd1\x83\xd0\xb5\xd1\x82\xd1\x8b. \xd0\x91\xd1\x8b\xd1\x81\xd1\x82\xd1\x80\xd1\x8b\xd0\xb9 \xd0\xb7\xd0\xb0\xd1\x8f\xd1\x86 \xd1\x81\xd0\xbf\xd0\xb5\xd1\x88\xd0\xb8\xd1\x82 \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xbe\xd0\xb9. \xd0\x92 \xd0\xbd\xd0\xb5\xd0\xb1\xd0\xb5 \xd0\xbb\xd0\xb5\xd1\x82\xd0\xb8\xd1\x82 \xd0\xbf\xd1\x82\xd0\xb8\xd1\x86\xd0\xb0."}'', original exception: invalid literal for int() with base 10: b'\xb3\xd0\xb8\xd0\xbd'
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 264, in prepare_stepper
+    self.__make_stpd_file()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 354, in __make_stpd_file
+    stepper.write(os)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 64, in write
+    for missile in self.ammo:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/format.py", line 18, in __iter__
+    for timestamp, marker, missile in self.af:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 50, in <genexpr>
+    return ((timestamp, marker or self.marker(missile), missile)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 44, in <genexpr>
+    ammo_stream = (
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 46, in <genexpr>
+    for ammo in ((missile, marker or self.marker(missile))
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/missile.py", line 137, in __iter__
+    raise AmmoFileError(
+
+2024-04-26 07:16:41,481	Exception occurred:
+<class 'yandextank.stepper.module_exceptions.AmmoFileError'>: Unexpected end of file: read 799 bytes instead of 808
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 264, in prepare_stepper
+    self.__make_stpd_file()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 354, in __make_stpd_file
+    stepper.write(os)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 64, in write
+    for missile in self.ammo:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/format.py", line 18, in __iter__
+    for timestamp, marker, missile in self.af:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 50, in <genexpr>
+    return ((timestamp, marker or self.marker(missile), missile)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 44, in <genexpr>
+    ammo_stream = (
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 46, in <genexpr>
+    for ammo in ((missile, marker or self.marker(missile))
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/missile.py", line 132, in __iter__
+    raise AmmoFileError(
+
+2024-04-26 07:20:59,917	Exception occurred:
+<class 'yandextank.stepper.module_exceptions.AmmoFileError'>: Unexpected end of file: read 799 bytes instead of 803
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 70, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 262, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/plugin.py", line 67, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 106, in config_file
+    self._config_file = self.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 114, in compose_config
+    streams_config += stream.compose_config()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Phantom/utils.py", line 288, in compose_config
+    self.stepper_wrapper.prepare_stepper()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 264, in prepare_stepper
+    self.__make_stpd_file()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 354, in __make_stpd_file
+    stepper.write(os)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 64, in write
+    for missile in self.ammo:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/format.py", line 18, in __iter__
+    for timestamp, marker, missile in self.af:
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 50, in <genexpr>
+    return ((timestamp, marker or self.marker(missile), missile)
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 44, in <genexpr>
+    ammo_stream = (
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/main.py", line 46, in <genexpr>
+    for ammo in ((missile, marker or self.marker(missile))
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/stepper/missile.py", line 132, in __iter__
+    raise AmmoFileError(
+
+2024-04-26 07:23:47,902	Interrupting
+2024-04-26 07:23:47,902	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2024-04-26 07:34:57,075	Interrupting
+2024-04-26 07:34:57,076	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2024-04-26 08:27:29,410	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2024-04-26 08:27:29,410	Interrupting
+2024-04-26 08:31:28,947	Interrupting
+2024-04-26 08:31:28,947	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2024-04-26 08:42:44,498	Data poller has been receiving no data for 31.0 seconds.
+Closing data poller
+2024-04-26 08:42:44,529	Data poller has been receiving no data for 31.0 seconds.
+Closing data poller

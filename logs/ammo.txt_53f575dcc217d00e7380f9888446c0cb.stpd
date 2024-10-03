@@ -1,0 +1,6 @@
+348 0 POST
+Host: localhost:8000
+Content-Type: application/json
+Content-Length: 348
+
+{"text":"Жилье в наб. Зеленая, д. 62, кв. 273, г. Челябинск. текст для маскировки CVV: 127. 11.01.2021. Имя компьютера: S-NSK01-1CBOR01. Компьютер с именем W-MSK02-FS00015. логин argofun был 

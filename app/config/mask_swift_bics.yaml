@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "SWIFT/BIC Codes"
+    prefix: "SWIFT_BIC"
+    regex:
+      - "\\b\\w{4}RU\\w{2}(\\w{3})?\\b"

@@ -1,0 +1,6 @@
+masking_patterns:
+  - type: "INN Codes"
+    prefix: "INN"
+    regex:
+      - "\\b\\d{2}-?\\d{2}-?\\d{6}-?\\d{2}\\b"
+      - "\\b\\d{2}-?\\d{2}-?\\d{5}-?\\d{1}\\b"

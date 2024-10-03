@@ -1,0 +1,46 @@
+masking_patterns:
+  - type: "Passport ID Text"
+    prefix: "PASSPORT_TEXT_ID"
+    regex:
+      - >
+        \b(?:паспорт
+        |Паспорт
+        |passport
+        |Passport):?\s*(?:серия
+        |Серия
+        |series
+        |Series)?\s*\d{2}\s*\d{2}\s*(?:номер
+        |Номер
+        |no\.?
+        |#)?\s*\d{6}\b
+      - >
+        \b(?:паспорт
+        |Паспорт
+        |passport
+        |Passport):?\s*(?:серия
+        |Серия
+        |series
+        |Series)?\s*\d{4}\s*(?:номер
+        |Номер
+        |no\.?
+        |#)?\s*\d{6}\b
+      - >
+        \b(?:паспорт
+        |Паспорт
+        |passport
+        |Passport):?\s*\d{10}\b
+      - >
+        \b(?:паспорт
+        |Паспорт
+        |passport
+        |Passport):?\s*(?:серия
+        |Серия
+        |series
+        |Series)?\s*\d{2}\s*\d{2}\s*(?:№
+        |#)\s*\d{6}\b
+      - >
+        \b(?:паспорт
+        |Паспорт
+        |passport
+        |Passport):?\s*\d{4}\s*(?:№
+        |#)\s*\d{6}\b

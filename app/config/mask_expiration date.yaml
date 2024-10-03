@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "Expiration_date"
+    prefix: "EXPDATE"
+    regex:
+      - '\b[01]\d[\s_\/-]\d{2}\b'

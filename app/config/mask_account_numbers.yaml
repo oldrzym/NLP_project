@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "Account Transactions"
+    prefix: "ACCOUNT_TRANS"
+    regex:
+      - №?\s*\b\d{20}\b

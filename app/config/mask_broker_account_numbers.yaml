@@ -1,0 +1,5 @@
+masking_patterns:
+  - type: "Broker Account Numbers"
+    prefix: "BROKER_ACCT"
+    regex:
+      - \b\d+/\d{2,4}-?[A-Za-z]*\b
