@@ -13,3 +13,21 @@ class MaskResponseModel(BaseModel):
         "{DATE_2}": "15.07.1990",
         "{ORGANIZATION_1}": "ЗАГСе"
     })
+
+class BertLabels(BaseModel):
+
+    entity_label2id = {
+        "O": 0,
+        "B-PER": 1,
+        "I-PER": 2,
+        "B-ORG": 3,
+        "I-ORG": 4,
+        "B-LOC": 5,
+        "I-LOC": 6,
+        "B-ADDRESS": 7,
+        "I-ADDRESS": 8,
+        "B-DATE": 9,
+        "I-DATE": 10,
+    }
+    
+    id2entity_label = {v: k for k, v in entity_label2id.items()}
