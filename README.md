@@ -80,3 +80,16 @@ The system has been tested on a server with the following specifications:
 - GPU: NVIDIA RTX A4000
 
 It can handle up to 10 concurrent requests with an average response time of 364 ms.
+
+## Related Work 
+
+Text anonymization and PII masking have seen significant growth with the advent of advanced NLP models. Traditional systems often rely on deterministic patterns (regex) and dictionary lookups; however, these approaches struggle with ambiguous formats and unseen data. Recent research has turned to transformer-based models, such as BERT, RoBERTa, and their multilingual variants (mBERT, XLM-R), fine-tuned for privacy-centric tasks. Studies have demonstrated that large language models (LLMs) can effectively identify sensitive entities when provided with sufficient domain-specific training data, sometimes outperforming purely rule-based systems [Dernoncourt et al., 2017].
+
+# State-of-the-art Approaches:
+Many recent approaches leverage pre-trained transformer encoders for Named Entity Recognition (NER), fine-tuning them on specialized datasets curated for medical, financial, or legal PII detection. For instance, work on clinical note de-identification leverages models like ClinicalBERT [Alsentzer et al., 2019] to mask patient names, addresses, and health identifiers. Similarly, legal domain anonymization models use RoBERTa variants fine-tuned on legal corpora [Chalkidis et al., 2020].
+
+# Privacy-Specific Datasets:
+A known benchmark for entity recognition is the CoNLL-2003 dataset, traditionally used for PER, ORG, LOC, MISC entity recognition. While CoNLL-2003 is not originally designed for PII masking, several adaptations and follow-up studies have shown how the dataset can be extended or combined with synthetic annotations to simulate PII-related scenarios. Another noteworthy dataset is the i2b2/UTHealth Clinical Data, used extensively in medical text de-identification challenges [Stubbs et al., 2015]. Although it focuses on English clinical notes, the methodology and benchmarks can serve as a reference point.
+For our project, while we have not tested against i2b2 directly, the principles guiding domain adaptation from a general NER system to a privacy-focused anonymizer apply similarly here.
+
+By comparing our approach to such standards, we highlight the generality and robustness of our system. In the future, incorporating a transformer-based NER model and evaluating on a known benchmark like i2b2 or adapting CoNLL-2003 for PII entities would provide stronger comparative metrics against known baselines.
