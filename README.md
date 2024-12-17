@@ -109,11 +109,11 @@ BERT + Regex + Lemma (no Natasha/Pullenti)	BERT + Regex + Lemma	0.93
 BERT + Natasha + Pullenti + Regex + Lemma	Full Hybrid System	0.95
 ### Component Roles:
 
-Natasha: Provides strong coverage of personal names and common named entities.
-Pullenti: Particularly effective for addresses and structured location information.
-Regex: Essential for capturing non-standard tokens like passport numbers, emails, tokens, and hashes that do not follow typical linguistic patterns.
-Lemmatization-based Masking: Useful for domain-specific codewords or phrases not recognized by generic NER models. It normalizes text and searches for known sensitive lemmas.
-BERT-based Model: Offers robust generalization and can improve recall on tricky entity types. However, without domain adaptation, it may not outperform the hybrid system but still serves as a strong competitor or complementary component.
+- Natasha: Provides strong coverage of personal names and common named entities.
+- Pullenti: Particularly effective for addresses and structured location information.
+- Regex: Essential for capturing non-standard tokens like passport numbers, emails, tokens, and hashes that do not follow typical linguistic patterns.
+- Lemmatization-based Masking: Useful for domain-specific codewords or phrases not recognized by generic NER models. It normalizes text and searches for known sensitive lemmas.
+- BERT-based Model: Offers robust generalization and can improve recall on tricky entity types. However, without domain adaptation, it may not outperform the hybrid system but still serves as a strong competitor or complementary component.
 The ablation study confirms that our hybrid approach, combining all components, yields the highest overall performance.
 
 ### Reversible Masking:
