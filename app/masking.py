@@ -27,6 +27,20 @@ def mask_with_regex(text: str, pattern_info: dict, masks_dict: dict, counters: d
                 print(f"Duplicate mask {mask_placeholder} found. Skipping...")
     return masks_dict, text
 
+from inference.bert_ner_infer import predict_entities
+from app.masking import apply_masking  # Assume you have your masking code here
+from utils.conversion import bert_entities_to_spans, integrate_ner_into_text
+
+def run_full_masking_pipeline(text):
+    bert_ents = predict_entities(text)
+    
+    spans = bert_entities_to_spans(text, bert_ents)
+    
+    masked_text, masks = integrate_ner_into_text(text, spans)
+    
+    result = apply_masking(masked_text)
+    
+    return result
 
 def apply_masking(text: str):
     masked_text = text
